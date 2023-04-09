@@ -26,7 +26,7 @@ def save_screenshot_with_box(image, rects):
 
     for rect in rects:
         x, y, w, h = rect
-        draw.rectangle([x, y, x + w, y + h], outline='red', width=2)
+        draw.rectangle([x, y, x + w, y + h], outline='red', width=4)
 
     timestamp = time.strftime('%Y-%m-%d_%H-%M-%S')
     save_path = os.path.join("screenshots", f"{timestamp}.png") 
