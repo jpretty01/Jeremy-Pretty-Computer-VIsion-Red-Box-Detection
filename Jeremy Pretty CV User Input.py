@@ -29,7 +29,7 @@ def save_screenshot_with_box(image, rects):
         draw.rectangle([x, y, x + w, y + h], outline='red', width=2)
 
     timestamp = time.strftime('%Y-%m-%d_%H-%M-%S')
-    save_path = os.path.join("screenshots", f"{timestamp}.png")
+    save_path = os.path.join("screenshots", f"{timestamp}.png") 
 
     if not os.path.exists("screenshots"):
         os.makedirs("screenshots")
